@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel = "icon" href = "./profile_i/WorldTree.png">
+	<link rel="stylesheet" type="text/css" href="website.css"><!-- title and getting the css stylesheet -->
+</head>
+	
+<body onload = "openNav()">
+
+<!-- Javascript -->
+<script src = "script.js">
+</script>
+
+<!-- Login Form -->
+<div id="mySidenav" class="sidenav">
+	<h1>Login to WorldTree</h1>
+	<br><img src = "./profile_i/WorldTree.png" alt = "World Tree Logo" height="25%"><br><br><!-- Website Logo -->
+	<form action = "login.php" method = "POST" name = "login">
+		<input type = "text" name = "uname" placeholder = "Username"><!-- user inputs -->
+		<input type = "password" name = "pword" placeholder = "Password">
+	</form>
+	<div class = "lrbuttons">
+		<button onclick = "document.login.submit();">Login</button><!-- Buttons to login or sign up-->
+		<button onclick = "register()">Sign Up</button><!-- login submits the credentials and sends them to login.php whist register calls the register function -->
+	</div>		
+	
+</div>
+	
+</body>
+
+	
+</html>

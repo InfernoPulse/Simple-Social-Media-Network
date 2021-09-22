@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="website.css">
+</head>
+	
+<body onload = "openNav()">
+
+<!-- Javascript -->
+<script src = "script.js">
+</script>
+
+<!-- Login Form -->
+<div id="mySidenav" class="sidenav">
+	<h1>Login to WorldTree</h1>
+	<br><img src = "./profile_i/avatar.png" alt = "user profile picture" height="25%"><br><br>
+	<form action = "login.php" method = "POST" name = "login">
+		<input type = "text" name = "uname" placeholder = "Username">
+		<input type = "password" name = "pword" placeholder = "Password">
+	</form>
+	<div class = "lrbuttons">
+		<button onclick = "document.login.submit();">Login</button>
+		<button onclick = "register()">Sign Up</button>
+	</div>		
+	
+</div>
+	
+</body>
+
+	
+</html>

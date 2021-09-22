@@ -1,0 +1,21 @@
+TO DO:
+
+
+Home Page
+Redraft Navbar
+
+Profile Page
+Redraft it
+
+Settings Page
+
+Get themes working
+Get blocked accounts working
+Make it so that a user can change their bio
+
+Misc
+
+change logout to send a user to the login screen
+make css responsive
+should go back to make the getting rid of space in div etc to be a uriencoding
+add css to buttons

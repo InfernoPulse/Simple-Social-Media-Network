@@ -1,0 +1,48 @@
+TO DO:
+
+
+Home Page
+
+Get switching to a new page to work
+Get upvotes and downvotes to work
+Get sorts working
+Get search working
+Redraft Navbar
+Redraft sidebar to go away when clicked off
+Make pictures uploadable
+Make it so a user can save posts
+Make it so a user can open a post to see its contents
+Give css id for js created posts
+Profile Page
+
+Make it so a user can choose their profile pic
+Get friends working
+Get votes to display on the friends page
+Make it so you can switch between user navbar
+
+Settings Page
+
+Get themes working
+Get rid of change username
+Get blocked accounts working
+Make it so you can delete your account
+Make it so that a user can change their bio
+
+
+Misc
+
+change logout to send a user to the login screen
+make css responsive
+get cookies to be deleted when you move off x page
+should go back to make the getting rid of space in div etc to be a uriencoding
+add css to buttons
+
+
+
+
+need to fix the major bug that is going to be new and old post if there is one, just making sure 
+need to fix there being a forward button on the first page if there is not more than 50 posts
+
+need to add a where clause for user and user friends
+
+need to add a proper comment buttons etc for subbar and contents should display user created at x time etc

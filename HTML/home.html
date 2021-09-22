@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="website.css">
+</head>
+
+<body>
+	<!--Creating general grid container-->
+	<div class = "grid-container">
+		<div class = "header">
+			<!--Side Navigation bar for User Profile-->
+			<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<br><img src = "./profile_i/avatar.png" alt = "user profile picture" height="25%"><br>
+					<form action = "login.php" name = "login" method = "POST">
+						<input type = "text" name = "uname" placeholder = "Username">
+						<input type = "password" name = "pword" placeholder = "Password">
+					</form>
+					<div class = "lrbuttons">
+						<button onclick = "document.login.submit();">Login</button>
+						<button onclick = "register()">Sign Up</button>
+					</div>		
+				
+			</div>
+			<!--Navigation bar-->
+			<div class = "navbar">
+				<nav>
+					<!--Navbar links-->
+					<a href = "" class = "active">Home</a
+					><a href = "">Messages</a
+					><a href = "">Notifications</a
+					><form action = "search.php"><!--search bar-->
+						<input type = "text" name = "search" placeholder="Search WorldTree">
+					</form>
+				</nav>
+			</div>
+			<!--User profile button-->
+			<div class = "uprofile">
+					<img src = "./profile_i/avatar.png" alt = "user profile picture" onclick="openNav()">
+			</div>	
+		</div>
+		
+		<!--Feed-->
+		<div class = "posts">
+			test test test
+		</div>
+		
+		<!--utility buttons-->
+		<div class = "util">
+			<br><br><br><br><br>
+			<a href="#createpost">Make a Post</a>
+
+			<div class = "dropdown">
+				<button onclick = "dropdown()" class = "dropbtn">Sort</button>
+				<div id = "dropcontent" class = "dropdown-content">
+					<form action = "sort.php" method = "GET">
+						<input type = "button" name = "top" value = "top"><br>
+						<input type = "button" name = "new" value = "new"><br>
+						<input type = "button" name = "old" value = "old">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--JavaScript-->
+	<script src = "script.js">
+	</script>
+
+</body>
+
+</html>

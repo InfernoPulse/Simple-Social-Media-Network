@@ -1,0 +1,413 @@
+/* html */
+html{
+	height:100%;/* set the height to 100% */
+	width:100%;/* set the width to 100% */
+}
+
+/* body */
+body{
+	margin: 0px;/* set margin to 0px */
+	padding: 0px;/* set padding to be 0px */
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;/* set fonts to be used in site in order of importance from left to right */
+	min-height: 100%;/* set the minimum height of the body to be 100% */
+	background-color: #EEEEEE;/* set the background color of the page */
+}
+
+
+/* navbar */
+
+	/* navbar links */
+nav a{
+	display: inline-block;/* display it inlin */
+	color: white;/* setting the color of the text */
+	text-align: center;/* where the text should be aligned */
+	padding: 14px 16px;/* the padding given to the link */
+	text-decoration: none;/* setting the text decoration to none */
+}
+	/* when hovering over the nav bar */
+nav a:hover:not(.active){
+	background-color: #3d00e0;/* set the background color to be different */
+}
+
+	/* current page */ 
+nav .active{
+	background-color: #ee0290;/* set the background color to also be different */
+}
+
+
+/* sidenav menu for user profile */
+
+	/* uprofile button */
+.uprofile img{
+	border-radius: 50%;/* have the user image be a circle */
+	display: inline-block;/* display it inline */
+	cursor: pointer;/* make it so the cursor whilst on the image is that of a pointer */
+	margin-top: 7px;/* give it a margin on the top of 7px */
+	margin-left: 20px;/* give it a margin on the left of 20px */
+	width: 35px;/* make it 35px wide */
+}
+  
+	/* links in the sidenav */
+.sidenav a {
+	padding: 8px 8px 8px 8px;/* give it the following padding */
+	text-decoration: none;/* make it so it has no text decoration */
+	font-size: 25px;/* make it 25px big */
+	color: #f1f1f1;/* set the color of the text */
+	display: block;/* make it display as a block */
+	transition: 0.3s;/* give it a 0.3s transition from closed to open */
+}
+
+.sidenav a:hover{/* when you hover over the cross change the background color of the cross */
+	background-color: #e54304;
+}
+
+  	/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;/* make its position absolute */
+	top: 0;/* have it be 0px from the top */
+	right: 25px;/* have it be 25px from the right of the screen */
+	font-size: 36px;/* make it 36px big */
+	margin-left: 50px;/* give it a left margin of 50px */
+}
+
+	/* username link */
+.sidenav .title {
+	font-size: 30px;/* make the users name 30px big */
+}
+
+.sidenav .logout {
+	position: absolute;/* have the logout button have an absolute position */
+	bottom: 75px;/* have it be 75px from the bottom */
+	right: 25px;/* have it be 25px from the right of the screen */
+	margin-left: 50px;/* give it a margin of 50px */
+	font-size: 20px;/* give it a font size of 20 */
+}
+
+	/* profile img */
+.sidenav img{
+	border-radius: 50%;/* make the user profile image a circle */
+	display: block;/* make it display as a block */
+	margin-left: auto;/* make its margin left and right auto, hence centering the image in the middle of the div */
+	margin-right: auto;
+	box-shadow: 2px 2px 6px 0 grey;/* give it a shadow */
+	width: 243px;/* make it 243 px wide */
+}
+	/* username input for login and registration page */
+.sidenav input[type = text]{
+	display: block;/* have it display as a block */
+	padding: 6px;/* give it 6px of padding */
+	font-size: 17px;/* make the text 17px big */
+	margin-left: auto;/* have margin left and right be auto, hence centering the image */
+	margin-right: auto;
+}
+
+	/* password input for login and registration page */
+.sidenav input[type = password]{
+	display: block;/* have it display as a block */
+	padding: 6px;/* give it 6px of padding */
+	font-size: 17px;/* make the text 17px big */
+	margin-left: auto;/* have margin left and right be auto, hence centering the image */
+	margin-right: auto;
+}
+
+	/* button for login and registration */
+.sidenav button{
+	display: inline-block;/* have the buttons display inline */
+	padding: 6px;/* give the button some padding */
+	margin-top: 5px;/* give it a margin on its top */
+	background: #ddd;/* make the background of the button this color */
+	font-size: 17px;/* make the font size of the button 17px big */
+	border: none;/* get rid of the buttons border */
+	cursor: pointer;/* make it so that when you hover over the button that a pointer appears */
+	box-shadow: 2px 2px 6px 0 grey; /* give it a shadow */
+	padding-left: 31px;/* give it a padding of 31px both left and right */
+	padding-right: 31px;
+}
+
+	/* for hovering over login and registration */
+.sidenav button:hover{
+	background: #ccc;/* change the background color of the button */
+}
+
+.sidenav h1{
+	margin-top: 10px;/* give it a margin at the top of 10px */
+}
+
+
+/* search */
+
+	/* move the search bar to the right of the screem */
+nav form{
+	float: right;
+}
+
+	/* styling the search bar */
+nav input[type = text]{
+	display: inline-block;/* have it be inline */
+	padding: 6px;/* give it a padding of 6px */
+	margin-top: 8px;/* give it a top margin of 8px */
+	font-size: 17px;/* make its font size 17px big */
+	border: none;/* get rid of its border */
+	background-position: 190px -1px;/* have it placed at these coordinates */
+	background-image: url(search.png);/* give it this background image */
+	background-repeat: no-repeat;/* don't have the background image repeat */
+	box-shadow: 1px 1px 6px 0 grey; /* give it a shadow */
+}
+
+
+/* util */
+
+	/* creating the dropdown meny */
+.util .dropdown{
+	width: 100%;/* make its width 100% */
+}
+
+	/* utility links */
+.util a {
+	display: block;/* have it displayed as a block */
+	color: white;/* have its text color be white */
+	background-color: #6002ee;/* set its background color */
+	text-align: center;/* have it aligned center */
+	padding: 14px 16px;/* give it some padding */
+	text-decoration: none;/* get rid of its text decoration */
+}
+
+.util .active{/* if the button is active then change its background color to that of the color below */
+		background-color: #ee0290;
+}
+
+	/* when hovering over links */
+.util a:hover:not(.active){/* if the link is being hovered over and the link doesn't have the active attribute then have its background color change to the below when hovered over */
+	background-color: #3d00e0;
+}
+
+	/* button for opening dropdown meny */
+.util .dropbtn {
+	width: 100%;/* make its width 100% */
+	background-color: #6002ee;/* set its background color */
+	color: white;/* set its text color */
+	border: none;/* get rid of its border */
+	padding: 14px 16px;/* give it some padding */
+	cursor: pointer;/* when hovered over change the mouse cursor to that of a pointer */
+	font-size: 15px;/* set the text color to 15px */
+}
+
+	/* when hovering over dropdown button set the background color to that of the below*/
+.util .dropbtn:hover{
+	background-color: #3d00e0;
+}
+
+	/* styling dropdown container */
+.dropdown {
+	position: relative;/* have the position of things with this class be relative and displayed inline */
+	display: inline-block;
+}
+
+	/* styling dropdown content */
+.dropdown-content {
+	display: none;/* make its display none */
+	position: absolute;/* have its position be absolute */
+	background-color: #f1f1f1;/* set its background color */
+	width: 100%;/* set its width to 100% */
+	z-index: 1;/* set its z-index */
+}
+
+	/* styling sort button options */
+.dropdown-content .sort{
+	border: none;/* get rid of its border */
+	padding: 14px 16px;/* give it some padding */
+	cursor: pointer;/* when mouse on something of this class change the cursor to that of a pointer */
+	font-size: 15px;/* set its font size to 15px */
+	width: 100%;/* set its width to 100% */
+	background-color: #FAFAFA;/* set its background color */
+}
+
+	/* when hovering over the sort buttons */
+.dropdown-content .sort:hover{
+	border: none;/* set its border to none */
+	background-color: #E0E0E0;/* change its background color to this */
+}
+
+	/* opens the dropdown menu after javascript activation */
+.show {
+	display:block;
+}
+
+
+/* profile */
+
+.profile img {
+	height: 300px;/* have the profile image be 300px tall */
+}
+
+.profile .uimage{
+	border-radius: 50%;/* make the image a circle */
+	width: 200px;/* give it a width of 200px */
+	height: auto;/* set its height to be automatic */
+	position : absolute;/* make its position absolute */
+	top: 200px;/* have it be 200px from the top */
+	left: 50%;/* have it be in the middle of the screen */
+	margin-left: -100px;/* give it a left margin of -100px */
+	box-shadow: 0px 2px 6px 0 grey;/* give it a shadow */
+}
+
+
+.profile .pnav{
+	border: none;/* get rid of its border */
+	background-color: #9E9E9E;/* set its background color */
+	color: white;/* set its color */
+	padding: 14px 0px;/* give it some padding */
+	display:inline-block;/* have it displayed inline */
+	text-align: center;/* have it centered on the screen */
+	width: 100%;/* have its width be 100% */
+	font-size: 15px;/* have its font-size be 15px */
+}
+
+.profile .pnav:hover{
+	cursor: pointer; /* have the cursor be a pointer when hvoering over an object of this class */
+	background-color: #BDBDBD;/* set its background */
+}
+
+.profile .uname{
+	padding: 10px 16px;/* give it some padding */
+	font-size: 30px;/* set its font size */
+}
+
+/* subbar */
+
+.subbar a{
+	color:  #9E9E9E;/* set its text color */
+	display: inline-block;/* have it displayed inline */
+}
+
+/* grids*/
+
+	/* general grid container */
+.grid-container{
+	display: grid;/* have this class be displayed as a grid */
+	grid-gap: 0px;/* have no grid gaps */
+	grid-template-areas: 	'header header header header header header header header' 
+							'posts posts posts posts posts posts posts util';/* the order in which divs should be set, with words like header being the class of the div, divs should be grid */
+}
+
+	/* navbar container */
+.header{
+	grid-area: header;/* name of the div for grid template areas */
+	display:grid;/* have this class be displayed as a grid */
+	grid-template-areas: 	'. navbar navbar navbar navbar navbar navbar uprofile .';/* the order in which divs should be set*/
+	background-color: #6002ee;/* set the background color */
+	box-shadow: 0 1px 6px 0 grey;/* give it a shadow */
+}
+
+	/* navbar */
+.navbar{
+	grid-area: navbar;/* have this class be displayed as a grid */
+}
+
+	/* userprofile button in navbar */
+.uprofile{
+	grid-area: uprofile;/* have this class be displayed as a grid */
+}
+
+	/* sidenav */
+.sidenav {
+	height: 100%; /* set its height */
+	width: 0; /* set its width */
+	position: fixed;/* have its position be fixed */
+	z-index: 1;/* set its z-index */
+	top: 0;/* have it be from the top of the page */
+	right: 0;/* have it be from the right of the screen */
+	background-color: #ee6002;/* set the background color */
+	overflow-x: hidden;/* hide x-axis overflow */
+	padding-top: 60px;/* give it some top padding */
+	transition: 0.5s;/* give it a transition time of 0.5s */
+	box-shadow: -1px 0 6px 0 grey;/* give it a shadow */
+	text-align: center;/* have text aligned center */
+	color: white;/* set its text color */
+	margin: 0px;/* give it no margin */
+}
+
+	/* login and registration buttons */
+.lrbuttons{
+	text-align: center;/* have its text aligned center */
+}
+
+	/* posts feed */
+.posts{
+	grid-area: posts;/* have this class be displayed as a grid */
+	display: grid;/* have this class be displayed as a grid */
+	height: 100%;/* set its height */
+	width: 1500px;/* set its width */
+	margin-left: 70px; /* set its left margin */
+	margin-right: 7px;/* set its right margin */
+	margin-top: 10px;/* set its top margin */
+	font-size: 20px;/* set its fontsize */
+	background-color: white;/* set the background color */
+}
+
+	/*utility buttons, make posts and sorts etc */
+.util{
+	grid-area: util;/* have this class be displayed as a grid */
+	width: 343px;/* set its width */
+	box-shadow: 0px 2px 6px 0 grey;/* give it a shadow */
+	height: 100%;/* set its height */
+	background-color: #FAFAFA;/* set the background color */
+}
+
+	/* profile grid */
+.profile{
+	grid-area: profile;/* have this class be displayed as a grid */
+	display: grid;/* have this class be displayed as a grid */
+	background-color: #9E9E9E;/* set the background color */
+	color: white; /* set its text color */
+}
+
+	/* profile nav */
+.userinfo{
+	display: grid;/* have this class be displayed as a grid */
+	grid-template-columns: repeat(5,1fr);/* have 5 equal width columns for a template */
+}
+
+.userinfo > div {
+	display: grid;/* have this class be displayed as a grid */
+ 	justify-items: center;/* have items centered */
+}
+
+.post{
+	display: grid;/* have this class be displayed as a grid */
+	grid-template-areas: 	'vote title title title title title title title title title title title title title title' 'vote content content content content content content content content content content content content content content' 'vote subbar subbar subbar subbar subbar subbar subbar subbar subbar subbar subbar subbar subbar subbar';/* the order in which divs should be set*/
+	grid-template-columns: 1fr repeat(14,1fr);/* have a column then 14 equal sized columns */
+	border-bottom: 2px solid #F5F5F5;/* have the bottom border be solid and color be #F5F5F5*/
+	min-height: 100px;/* set its minimum height */
+	margin-left: 20px;/* set its left margin */
+	margin-right: 10px;/* set its right margin */
+}
+
+.title{
+	display: grid;/* have this class be displayed as a grid */
+	grid-area: title;/* have this class be displayed as a grid */
+	font-size: 20px;/* set its fontsize */
+	color: blue;/* set its text color */
+}
+
+.vote{
+	display: grid;/* have this class be displayed as a grid */
+	grid-area: vote;/* have this class be displayed as a grid */
+}
+
+.content{
+	display:grid;/* have this class be displayed as a grid */
+	grid-area: content;/* have this class be displayed as a grid */
+	font-size: 16px;/* set its fontsize */
+	border: 1px solid #E0E0E0;/* give it a border */
+	border-radius: 5px;/* set the borders curvature on its corners */
+	background-color: #F5F5F5;/* set the background color */
+}
+
+.subbar{
+	display:inline-block;/* have it displayed inline */
+	grid-area: subbar;/* have this class be displayed as a grid */
+	font-size: 14px;/* set its fontsize */
+	color: #9E9E9E;/* set its text color */
+	font-weight: bold;/* make the text bold */
+}

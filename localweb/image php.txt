@@ -1,0 +1,16 @@
+$image = $_POST["UserImage"];
+	//if userimage is empty set userimage to avatar.png
+	if(empty($image)){
+		
+        $image = "./avatar.png";
+    }
+	
+	
+//validation that file is an image
+elseif(mime_content_type($image) != "image/*") {
+	echo $image;
+	echo mime_content_type($image);
+	echo "The file you have uploaded is not an image";
+}
+
+and mime_content_type($image) == "image/gif" 

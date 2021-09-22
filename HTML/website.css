@@ -1,0 +1,401 @@
+/* body */
+html{
+	height:100%;
+	width:100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+	min-height: 100%;
+	background-color: #EEEEEE;
+}
+
+
+/* navbar */
+
+	/* navbar links */
+nav a{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+	/* when hovering over the nav bar */
+nav a:hover:not(.active){
+	background-color: #3d00e0;
+}
+
+	/* current page */ 
+nav .active{
+	background-color: #ee0290;
+}
+
+
+/* sidenav menu for user profile */
+
+	/* uprofile button */
+.uprofile img{
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 7px;
+	margin-left: 20px;
+	width: 35px;
+}
+  
+	/* The cross in the top right */
+.sidenav a {
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #f1f1f1;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover{
+	background-color: #e54304;
+}
+
+  	/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+	/* username link */
+.sidenav .title {
+	font-size: 30px;
+}
+
+.sidenav .logout {
+	position: absolute;
+	bottom: 75px;
+	right: 25px;
+	margin-left: 50px;
+	font-size: 20px;
+}
+
+	/* profile img */
+.sidenav img{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 2px 2px 6px 0 grey;
+	width: 243px;
+}
+	/* username input for login and registration page */
+.sidenav input[type = text]{
+	display: block;
+	padding: 6px;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	/* password input for login and registration page */
+.sidenav input[type = password]{
+	display: block;
+	padding: 6px;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	/* button for login and registration */
+.sidenav button{
+	display: inline-block;
+	padding: 6px;
+	margin-top: 5px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 2px 2px 6px 0 grey;
+	padding-left: 31px;
+	padding-right: 31px;
+}
+
+	/* for hovering over login and registration */
+.sidenav button:hover{
+	background: #ccc;
+}
+
+.sidenav h1{
+	margin-top: 10px;
+}
+
+
+/* search */
+
+	/* move the search bar to the right of the screem */
+nav form{
+	float: right;
+}
+
+	/* styling the search bar */
+nav input[type = text]{
+	display: inline-block;
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	background-position: 190px -1px;
+	background-image: url(search.png);
+	background-repeat: no-repeat;
+	box-shadow: 1px 1px 6px 0 grey; 
+}
+
+
+/* util */
+
+	/* creating the dropdown meny */
+.util .dropdown{
+	width: 100%;
+}
+
+	/* utility links */
+.util a {
+	display: block;
+	color: white;
+	background-color: #6002ee;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.util .active{
+		background-color: #3d00e0;
+}
+
+	/* when hovering over links */
+.util a:hover:not(.active){
+	background-color: #3d00e0;
+}
+
+	/* button for opening dropdown meny */
+.util .dropbtn {
+	width: 100%;
+	background-color: #6002ee;
+	color: white;
+	border: none;
+	padding: 14px 16px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+	/* when hovering over dropdown button */
+.util .dropbtn:hover{
+	background-color: #3d00e0;
+}
+
+	/* styling dropdown container */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+	/* styling dropdown content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 100%;
+	z-index: 1;
+}
+
+	/* styling sort button options */
+.dropdown-content input[type = "button"]{
+	border: none;
+	padding: 14px 16px;
+	cursor: pointer;
+	font-size: 15px;
+	width: 100%;
+	background-color: #FAFAFA;
+}
+
+	/* when hovering over the sort buttons */
+.dropdown-content input[type = "button"]:hover{
+	border: none;
+	background-color: #E0E0E0;
+}
+
+	/* opens the dropdown menu after javascript activation */
+.show {
+	display:block;
+}
+
+
+/* profile */
+
+.profile img {
+	height: 300px;
+}
+
+.profile .uimage{
+	border: 2px;
+	border-color: white;
+	border-radius: 50%;
+	width: 200px;
+	height: auto;
+	position : absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -100px;
+	box-shadow: 0px 2px 6px 0 grey;
+}
+
+
+.profile a{
+	text-decoration: none;
+	color: white;
+	padding: 14px 0px;
+	display:inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.profile a:hover{
+	background-color: #BDBDBD;
+}
+
+.profile .uname{
+	padding: 10px 16px;
+	font-size: 30px;
+}
+
+/* grids*/
+
+	/* general grid container */
+.grid-container{
+	display: grid;
+	grid-gap: 0px;
+	grid-template-areas: 	'header header header header header header header header' 
+							'posts posts posts posts posts posts posts util';
+}
+
+	/* navbar container */
+.header{
+	grid-area: header;
+	display:grid;
+	grid-template-areas: 	'. navbar navbar navbar navbar navbar navbar uprofile .';
+	background-color: #6002ee;
+	box-shadow: 0 1px 6px 0 grey;
+}
+
+	/* navbar */
+.navbar{
+	grid-area: navbar;
+}
+
+	/* userprofile button in navbar */
+.uprofile{
+	grid-area: uprofile;
+}
+
+	/* sidenav */
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #ee6002;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	box-shadow: -1px 0 6px 0 grey;
+	text-align: center;
+	color: white;
+	margin: 0px;
+}
+
+	/* login and registration buttons */
+.lrbuttons{
+	text-align: center;
+}
+
+	/* posts feed */
+.posts{
+	grid-area: posts;
+	display: grid;
+	height: 100%;
+	width: 1500px;
+	margin-left: 70px;
+	margin-right: 7px;
+	margin-top: 10px;
+	font-size: 20px;
+	background-color: white;
+}
+
+	/*utility buttons, make posts and sorts etc */
+.util{
+	grid-area: util;
+	width: 343px;
+	box-shadow: 0px 2px 6px 0 grey;
+	height: 100%;
+	background-color: #FAFAFA;
+}
+
+	/* profile grid */
+.profile{
+	grid-area: profile;
+	display: grid;
+	background-color: #9E9E9E;
+	color: white;
+}
+
+	/* profile ifram nav */
+.userinfo{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+}
+
+.userinfo > div {
+	display: grid;
+ 	justify-items: center;
+}
+
+.post{
+	display: grid;
+	grid-template-areas: 	'vote title title title title' 'vote content content content content ' 'vote subbar subbar subbar subbar';
+	grid-template-columns: 1fr repeat(14,1fr);
+	border-bottom: 2px solid #F5F5F5;
+	height: 100px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.title{
+	display: grid;
+	grid-area: title;
+	font-size: 20px;
+}
+
+.vote{
+	display: grid;
+	grid-area: vote;
+}
+
+.content{
+	display:grid;
+	grid-area: content;
+	font-size: 16px;
+	color: #9E9E9E;
+}
+
+.subbar{
+	display:grid;
+	grid-area: subbar;
+	font-size: 16px;
+	color: #9E9E9E;
+	font-weight: bold;
+}
